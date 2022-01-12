@@ -92,22 +92,34 @@ public class ArrayList {
 
     /**
      *
-     * TODO: returns the index of the last number
+     * TODO: returns the index of the last number, potřebuju najít poslední číslo duplikátu v poli
      */
     public int lastIndexOf(int number) {
         int counter = 0;
         int[] duplicites = new int[counter];
 
-        for (int i = 0; i < array.length; i++) {
+        /*for (int i = 0; i < array.length; i++) {
             if (i == number){
                 counter++;
                 for (int j = 0; j < duplicites.length; j++) {
                     duplicites[j] = i;
+                    System.out.println(i);
+                }
+            }
+        }*/
+
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    counter++;
+
+                    System.out.println(array[i]);
+                    System.out.println(counter);
                 }
             }
         }
-
         return 0;
     }
 
 }
+

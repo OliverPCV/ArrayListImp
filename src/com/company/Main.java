@@ -11,7 +11,7 @@ public class Main {
     list.add(2);
     list.add(3);
     list.add(4);
-    list.add(4);
+    list.add(1);
     list.add(6);
     list.add(7);
     list.printArray();
@@ -24,6 +24,7 @@ public class Main {
     System.out.println("Velikost údu pole: " + list.size());
     System.out.println("Contains number 4 question mark: " + list.contains(4));
     System.out.println("Contains number 12 question mark: " + list.contains(12));
+    System.out.println(list.lastIndexOf(1));
 
     }
 }
